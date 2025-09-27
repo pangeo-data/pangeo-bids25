@@ -1,0 +1,1678 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>📡🌍 BiDS’25 — EO4EU Tutorial &#8212; Earthly marvels revealed - Pangeo, AI, and Copernicus in action</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'eo4eu_bids25';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Join the community!" href="afterword/resources.html" />
+    <link rel="prev" title="Rapid Landslide Detection using Synthetic Aperture Radar (SAR) Datacubes" href="landslide_xbatcher.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/pangeo-logo.png" class="logo__image only-light" alt="Earthly marvels revealed - Pangeo, AI, and Copernicus in action - Home"/>
+    <script>document.write(`<img src="_static/pangeo-logo.png" class="logo__image only-dark" alt="Earthly marvels revealed - Pangeo, AI, and Copernicus in action - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Scalable Earth Observation Data Analysis with Pangeo and EO4EU
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="agenda.html">Timeline of the Workshops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="users-getting-started.html">Registration to Pangeo@EOSC</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pangeo and EOSC in a nutshell</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pangeo.html">EOSC and the Pangeo community</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gap filling</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="SST_AI.html">Applying Cross Scattering Transform in Earth Observation imagery to fill missing values</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Surfing Waves with Sentinel-2 and HEALPix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Xbatcher_Sentinel2_wave.html">Surfing Waves with Sentinel-2: Cross-Spectra &amp; Wavelets on HEALPix Patches</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Landslide detection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="landslide_xbatcher.html">Rapid Landslide Detection using Synthetic Aperture Radar (SAR) Datacubes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">EO4EU tutorial</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">📡🌍 BiDS’25 — EO4EU Tutorial</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Beyond the tutorial</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="afterword/resources.html">Join the community!</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="afterword/pythia.html">Project Pythia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="afterword/edsbook.html">Environmental Data Science Book</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://notebooks.gesis.org/binder/v2/gh/pangeo-data/pangeo-bids25/main?urlpath=lab/tree/docs/eo4eu_bids25.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="http://pangeo-eosc.vm.fedcloud.eu/jupyterhub/hub/user-redirect/git-pull?repo=https%3A//github.com/pangeo-data/pangeo-bids25&urlpath=lab/tree/pangeo-bids25/docs/eo4eu_bids25.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/pangeo-data/pangeo-bids25" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/pangeo-data/pangeo-bids25/issues/new?title=Issue%20on%20page%20%2Feo4eu_bids25.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/eo4eu_bids25.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>📡🌍 BiDS’25 — EO4EU Tutorial</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">📡🌍 BiDS’25 — EO4EU Tutorial</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-objectives">EO4EU Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-architecture">EO4EU Architecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-infrastructure">EO4EU Infrastructure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-use-cases">EO4EU Use Cases</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bids-25-lightweight-masked-autoencoder-architecture-for-earth-observation">📡🌍 BiDS’25 — Lightweight Masked Autoencoder Architecture for Earth Observation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">📑 Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">1. Overview</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-exploration">2. Embedding Exploration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expert-specialization">3. Expert Specialization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#search-by-image">4. Search by Image</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1) Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-design">Model Design</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pretraining-objective">Pretraining Objective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-setup">Training Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-requirements">Install requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-eurosat-landsat-dataset-from-huggingface">Download EuroSAT-LANDSAT dataset from HuggingFace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-metadata-aware-moe-mae-from-github">Clone Metadata-Aware MOE-MAE from Github</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-eurosat-landsat-test-split-embeddings">Get EuroSAT-LANDSAT test split embeddings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-accelration-device-if-available">Get accelration device if available</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-metadata-aware-moe-mae-model">Initialize Metadata-Aware MoE-MAE model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-data-path">Set data path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-exploration-using-t-sne">2) Embedding Exploration using t-SNE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-t-sne-and-visualize-with-the-dataset-labels">Apply t-SNE and visualize with the dataset labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-all-tokens">t-SNE on all tokens</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-all-tokens-other-than-metadata-and-cls-token">t-SNE on all tokens other than metadata and cls token</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-cls-tokens">t-SNE on CLS tokens</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-metadata-tokens">t-SNE on metadata tokens</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-the-results">Plot the results</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-probe-performance-on-eurosat-ls-test-split">Linear probe performance on EuroSAT-LS Test Split.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3) Expert Specialization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transformation-datasets-and-dataloaders">Data transformation, datasets, and dataloaders</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-experts-specialities">Visualize experts specialities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-search-with-chromadb">4) Image Search with ChromaDB</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="bids-25-eo4eu-tutorial">
+<h1>📡🌍 BiDS’25 — EO4EU Tutorial<a class="headerlink" href="#bids-25-eo4eu-tutorial" title="Link to this heading">#</a></h1>
+<p><img alt="EO4EU logo" src="_images/eo4eu-logo.png" /></p>
+<section id="eo4eu-objectives">
+<h2>EO4EU Objectives<a class="headerlink" href="#eo4eu-objectives" title="Link to this heading">#</a></h2>
+<p>AI-augmented ecosystem for Earth Observation data accessibility with Extended reality User Interfaces for Service and data exploitation, or EO4EU, is a European Commission funded innovation project which aims at creating an advanced platform for searching, discovering, processing and analyzing EO data.
+The platform leverages machine learning to support handling of the characteristically-large volume of EO data as well as a combination of cloud computing infrastructure and pre-exascale high-performance computing to manage processing workloads.​</p>
+<p>The EO4EU Platform allows for searching, discovering processing and analyzing EO data and is based on a series of innovative technologies which allow to:</p>
+<ul class="simple">
+<li><p>Access EO data from different sources (e.g., Copernicus, Galileo, ECMWF)​.</p></li>
+<li><p>Support a sophisticated representation of data through a semantic-enhanced Knowledge Graph​.</p></li>
+<li><p>Use Machine Learning from marketplace to EO data processing​.</p></li>
+<li><p>Visualize EO data through easy-to-use graphical interfaces and Extended Reality applications​.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="eo4eu-architecture">
+<h2>EO4EU Architecture<a class="headerlink" href="#eo4eu-architecture" title="Link to this heading">#</a></h2>
+<p><img alt="EO4EU Architecture" src="_images/eo4eu-architecture.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="eo4eu-infrastructure">
+<h2>EO4EU Infrastructure<a class="headerlink" href="#eo4eu-infrastructure" title="Link to this heading">#</a></h2>
+<p><img alt="EO4EU Infra" src="_images/eo4eu-infra.png" /></p>
+<hr class="docutils" />
+<p>Check out the content pages bundled with this sample book to see more.</p>
+</section>
+<section id="eo4eu-use-cases">
+<h2>EO4EU Use Cases<a class="headerlink" href="#eo4eu-use-cases" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><em>EO for Personalized Health Care</em>: to expand mobile allergy and airbrone hazards forecasting.</p></li>
+<li><p><em>Food Security</em>: to improve the adaptability of food production using EO4EU for live climate data tracking and analysis.</p></li>
+<li><p><em>Soil Erosion</em>: to integrate rainfall datasets through EO4EU to assess soil suspectibility to water erosion.</p></li>
+<li><p><em>Civil Protection</em>: to improve disaster and calamity prevention and response using EO datasets.</p></li>
+<li><p><em>Ocean Monitoring</em>: to optimize shipping industry travel time across different oceans considering live weather data.</p></li>
+<li><p><em>Forest Ecosystem</em>: to improve forest productivity using EO4EU to simulate water, energy and carbon fluxes.</p></li>
+<li><p><em>Environmental Pests</em>: to assess and predict the impact of locust plague.</p></li>
+</ul>
+<blockquote>
+<div><p>For more information visit <a class="reference external" href="https://eo4eu.eu">EO4EU website</a></p>
+</div></blockquote>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="bids-25-lightweight-masked-autoencoder-architecture-for-earth-observation">
+<h1>📡🌍 BiDS’25 — Lightweight Masked Autoencoder Architecture for Earth Observation<a class="headerlink" href="#bids-25-lightweight-masked-autoencoder-architecture-for-earth-observation" title="Link to this heading">#</a></h1>
+<p>This notebook explores a <strong>metadata-aware lightweight Mixutre-of-Experts Masked Autoencoder (MOE-MAE) architecture</strong> for Earth Observation (EO) data.</p>
+<hr class="docutils" />
+<section id="contents">
+<h2>📑 Contents<a class="headerlink" href="#contents" title="Link to this heading">#</a></h2>
+<section id="overview">
+<h3>1. Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Lightweight metadata-aware MOE-MAE</strong></p></li>
+<li><p>Pretraining strategy</p></li>
+<li><p>Comparison with larger MAE architectures</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="embedding-exploration">
+<h3>2. Embedding Exploration<a class="headerlink" href="#embedding-exploration" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Generate embeddings of the <strong>EuroSAT-Landsat</strong> dataset using <strong>MoE-MAE</strong></p></li>
+<li><p>Visualize the learned feature space with <strong>t-SNE</strong></p></li>
+<li><p>Highlight different <strong>sample categories</strong> from <em>EuroSAT-LS</em></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="expert-specialization">
+<h3>3. Expert Specialization<a class="headerlink" href="#expert-specialization" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Investigate how individual <strong>experts specialize</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="search-by-image">
+<h3>4. Search by Image<a class="headerlink" href="#search-by-image" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Perform <strong>image retrieval</strong> using embeddings</p></li>
+<li><p>Use <strong>ChromaDB</strong> for efficient similarity search</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>1) Overview<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://github.com/AlbughdadiM/geo-moe-mae"><img alt="GitHub - geo-moe-mae" src="https://img.shields.io/badge/GitHub-geo--moe--mae-blue?logo=github" /></a></p>
+<p><a class="reference external" href="https://huggingface.co/albughdadim/lightweight-metadata-aware-mixture-of-experts-mae-landsat"><img alt="Hugging Face" src="https://img.shields.io/badge/HuggingFace-Model-yellow?logo=huggingface&amp;logoColor=black&amp;style=plastic" /></a></p>
+<section id="model-design">
+<h3>Model Design<a class="headerlink" href="#model-design" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Architecture</strong>: Compact Vision Transformer with Mixture-of-Experts (MoE).</p></li>
+<li><p><strong>Parameters</strong>: ~2.5M total (encoder ~2.3M).</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Model</strong></p></th>
+<th class="head"><p><strong>Type</strong></p></th>
+<th class="head"><p><strong>Parameters</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ResNet-18 (ImageNet / SSL4EO-L)</p></td>
+<td><p>CNN</p></td>
+<td><p>~11M</p></td>
+</tr>
+<tr class="row-odd"><td><p>ResNet-50 (ImageNet / SSL4EO-L)</p></td>
+<td><p>CNN</p></td>
+<td><p>~25M</p></td>
+</tr>
+<tr class="row-even"><td><p>ViT-S/16 (ImageNet / SSL4EO-L)</p></td>
+<td><p>Transformer</p></td>
+<td><p>~22M</p></td>
+</tr>
+<tr class="row-odd"><td><p>DOFA-B/16</p></td>
+<td><p>Transformer</p></td>
+<td><p>~111M</p></td>
+</tr>
+<tr class="row-even"><td><p>DOFA-L/16</p></td>
+<td><p>Transformer</p></td>
+<td><p>~330M</p></td>
+</tr>
+<tr class="row-odd"><td><p>Satlas Swin V2-B</p></td>
+<td><p>Transformer</p></td>
+<td><p>~88M</p></td>
+</tr>
+<tr class="row-even"><td><p>Prithvi-EO-100M</p></td>
+<td><p>Transformer</p></td>
+<td><p>~100M</p></td>
+</tr>
+<tr class="row-odd"><td><p>Prithvi-EO-2.0 300M</p></td>
+<td><p>Transformer</p></td>
+<td><p>~300M</p></td>
+</tr>
+<tr class="row-even"><td><p>Prithvi-EO-2.0 600M</p></td>
+<td><p>Transformer</p></td>
+<td><p>~600M</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Ours: MoE-MAE</strong></p></td>
+<td><p>Transformer (MoE)</p></td>
+<td><p><strong>~2.5M</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><strong>Core ideas</strong>:</p>
+<ul>
+<li><p><strong>Sparse expert routing</strong>: Tokens routed to a small subset of SwiGLU experts using NoisyTop-k gating.</p></li>
+<li><p><strong>Geo-temporal conditioning</strong>: Latitude, longitude, week-of-year, and hour-of-day encoded as sinusoidal (sin, cos) pairs → projected into embedding space → added as metadata tokens.</p></li>
+<li><p><strong>Grouped Query Attention (GQA)</strong>: Efficient multi-head attention variant.</p></li>
+<li><p><strong>Lightweight decoder</strong>: Two MoE transformer layers with reduced hidden size.</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="MoE-MAE Architecture" src="_images/moe_mae.png" /></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\textbf{Inputs:}\quad 
+&amp; \texttt{imgs} \in \mathbb{R}^{B\times C\times H\times W},\\
+&amp; \texttt{meta\_week},\ \texttt{meta\_hour},\ \texttt{meta\_lat},\ \texttt{meta\_lon} \in \mathbb{R}^{B\times 2}\ \ (\text{sin/cos pairs})\\[6pt]
+%
+\textbf{Encoder (mLiT):}\quad 
+&amp; \text{patches} \leftarrow \mathrm{ConvPatchify}(\texttt{imgs}) \in \mathbb{R}^{B\times N\times \mathrm{emb}}\\
+&amp; (\text{ids\_keep},\ \text{ids\_restore},\ \text{mask}) \leftarrow \mathrm{RandomMask}(N,\ \text{ratio})\\
+&amp; \text{kept} \leftarrow \mathrm{Gather}(\text{patches},\ \text{ids\_keep}) \in \mathbb{R}^{B\times N_{\text{keep}}\times \mathrm{emb}}\\
+&amp; \text{meta\_tokens} \leftarrow [W(\texttt{meta\_week}),\ H(\texttt{meta\_hour}),\ \Phi(\texttt{meta\_lat}),\ \Lambda(\texttt{meta\_lon})] \in \mathbb{R}^{B\times 4 \times \mathrm{emb}}\\
+&amp; \text{cls} \leftarrow \mathrm{expand}(\mathrm{CLS},\ B,1,\mathrm{emb})\\
+&amp; \text{enc\_in} \leftarrow \mathrm{Concat}(\text{meta\_tokens},\ \text{cls},\ \text{kept})\ \in\ \mathbb{R}^{B\times(M+1+N_{\text{keep}})\times \mathrm{emb}},\quad M=4\\[3pt]
+&amp; \text{pos\_meta\_cls} \leftarrow \mathrm{POS}[:,\ 0{:}(M{+}1),:]\ \in\ \mathbb{R}^{1\times(M+1)\times \mathrm{emb}}\\
+&amp; \text{pos\_patches} \leftarrow \mathrm{POS}[:,\ (M{+}1){:}(M{+}1{+}N),:]\ \in\ \mathbb{R}^{1\times N\times \mathrm{emb}}\\
+&amp; \text{pos\_kept} \leftarrow \mathrm{Gather}(\mathrm{expand}(\text{pos\_patches},B),\ \text{ids\_keep})\ \in\ \mathbb{R}^{B\times N_{\text{keep}}\times \mathrm{emb}}\\
+&amp; \text{enc\_in} \leftarrow \text{enc\_in}\ +\ \mathrm{Concat}(\mathrm{expand}(\text{pos\_meta\_cls},B),\ \text{pos\_kept})\\[3pt]
+&amp; x \leftarrow \text{enc\_in},\quad \text{total\_moe\_loss} \leftarrow 0\\
+&amp; \textbf{for each } \ell \in \text{encoder\_layers:}\\
+&amp; \qquad (x,\ \ell_{\text{aux}}) \leftarrow \ell(x)\quad (\text{MoE layer})\\
+&amp; \qquad \text{total\_moe\_loss} \leftarrow \text{total\_moe\_loss} + \ell_{\text{aux}}\\
+&amp; x \leftarrow \mathrm{LayerNorm}(x)\\
+&amp; \text{enc\_meta} \leftarrow x[:,\ 0{:}(M{+}1),:]\ \in\ \mathbb{R}^{B\times(M+1)\times \mathrm{emb}}\\
+&amp; \text{enc\_patches} \leftarrow x[:,\ (M{+}1):,:]\ \in\ \mathbb{R}^{B\times N_{\text{keep}}\times \mathrm{emb}}\\[8pt]
+%
+\textbf{Decoder (mmLiT):}\quad
+&amp; \text{meta\_dec} \leftarrow \mathrm{Linear}(\text{enc\_meta}) \in \mathbb{R}^{B\times(M+1)\times \mathrm{dec}}\\
+&amp; \text{vis\_dec} \leftarrow \mathrm{Linear}(\text{enc\_patches}) \in \mathbb{R}^{B\times N_{\text{keep}}\times \mathrm{dec}}\\
+&amp; \text{num\_mask} \leftarrow N - N_{\text{keep}}\\
+&amp; \text{mask\_tok} \leftarrow \mathrm{expand}(\mathrm{MASK},\ B,\ \text{num\_mask},\ \mathrm{dec})\\
+&amp; \text{dec\_all} \leftarrow \mathrm{Concat}(\text{vis\_dec},\ \text{mask\_tok}) \in \mathbb{R}^{B\times N\times \mathrm{dec}}\\
+&amp; \text{dec\_restored} \leftarrow \mathrm{Gather}(\text{dec\_all},\ \text{ids\_restore})\\
+&amp; \text{dec\_seq} \leftarrow \mathrm{Concat}(\text{meta\_dec},\ \text{dec\_restored}) \in \mathbb{R}^{B\times(M+1+N)\times \mathrm{dec}}\\
+&amp; \text{dec\_pos} \leftarrow \mathrm{Concat}(\mathrm{Zeros}(1,M{+}1,\mathrm{dec}),\ \mathrm{DEC\_POS}) \in \mathbb{R}^{1\times(M+1+N)\times \mathrm{dec}}\\
+&amp; \text{dec\_seq} \leftarrow \text{dec\_seq} + \text{dec\_pos}[:,\ 0{:}(M{+}1{+}N),:]\\
+&amp; y \leftarrow \text{dec\_seq}\\
+&amp; \textbf{for each } \ell \in \text{decoder\_layers:}\\
+&amp; \qquad (y,\ \_) \leftarrow \ell(y)\quad (\text{MoE layer})\\
+&amp; y \leftarrow \mathrm{LayerNorm}(y)\\
+&amp; \text{pred} \leftarrow \mathrm{Linear}\big(y[:,\ (M{+}1):,:]\big)\ \in\ \mathbb{R}^{B\times N\times (\text{patch\_area}\cdot C)}\\[8pt]
+\end{aligned}
+\end{split}\]</div>
+</section>
+<section id="pretraining-objective">
+<h3>Pretraining Objective<a class="headerlink" href="#pretraining-objective" title="Link to this heading">#</a></h3>
+<p>The model is trained using a self-supervised reconstruction-based objective:</p>
+<ol class="arabic">
+<li><p><strong>Masked patch reconstruction</strong><br />
+Loss applied to masked patches only.</p>
+<div class="math notranslate nohighlight">
+\[
+   L_{\text{masked}} = \frac{1}{|M|} \sum_{i \in M} \| \hat{x}_i - x_i \|^2
+   \]</div>
+</li>
+<li><p><strong>Auxiliary reconstruction on visible patches</strong><br />
+$<span class="math notranslate nohighlight">\(
+L_{\text{unmasked}} = \frac{1}{|V|} \sum_{i \in V} \| \hat{x}_i - x_i \|^2
+\)</span>$</p></li>
+<li><p><strong>MoE regularization (load balancing)</strong><br />
+Ensures balanced expert usage via coefficient-of-variation penalties.</p></li>
+</ol>
+<p><strong>Final loss function:</strong>
+$<span class="math notranslate nohighlight">\(
+L = L_{\text{masked}} + \alpha L_{\text{unmasked}} + \beta L_{\text{MoE}}
+\)</span>$</p>
+</section>
+<section id="training-setup">
+<h3>Training Setup<a class="headerlink" href="#training-setup" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Dataset</strong>: BigEarthNet-Landsat (BEN-LS) Training Split, ~320k samples, 7 spectral bands.</p></li>
+<li><p><strong>Masking ratio</strong>: 75%.</p></li>
+<li><p><strong>Epochs</strong>: 500.</p></li>
+<li><p><strong>Batch size</strong>: 128.</p></li>
+<li><p><strong>Optimizer</strong>: AdamW.</p></li>
+<li><p><strong>Learning rate schedule</strong>:</p>
+<ul>
+<li><p>Base LR = 3e-4.</p></li>
+<li><p>Warmup for 5% of epochs.</p></li>
+<li><p>Cosine decay to 0.</p></li>
+</ul>
+</li>
+<li><p><strong>Weight decay</strong>: 0.05.</p></li>
+</ul>
+<div class="highlight-bibtex notranslate"><div class="highlight"><pre><span></span><span class="nc">@misc</span><span class="p">{</span><span class="nl">albughdadi2025lightweightmetadataawaremixtureofexpertsmasked</span><span class="p">,</span>
+<span class="w">      </span><span class="na">title</span><span class="p">=</span><span class="s">{Lightweight Metadata-Aware Mixture-of-Experts Masked Autoencoder for Earth Observation}</span><span class="p">,</span><span class="w"> </span>
+<span class="w">      </span><span class="na">author</span><span class="p">=</span><span class="s">{Mohanad Albughdadi}</span><span class="p">,</span>
+<span class="w">      </span><span class="na">year</span><span class="p">=</span><span class="s">{2025}</span><span class="p">,</span>
+<span class="w">      </span><span class="na">eprint</span><span class="p">=</span><span class="s">{2509.10919}</span><span class="p">,</span>
+<span class="w">      </span><span class="na">archivePrefix</span><span class="p">=</span><span class="s">{arXiv}</span><span class="p">,</span>
+<span class="w">      </span><span class="na">primaryClass</span><span class="p">=</span><span class="s">{cs.CV}</span><span class="p">,</span>
+<span class="w">      </span><span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2509.10919}</span><span class="p">,</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="install-requirements">
+<h3>Install requirements<a class="headerlink" href="#install-requirements" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ! pip install geo_moe_mae/requirements.txt</span>
+<span class="o">!</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">plotly</span><span class="o">==</span><span class="m">6</span>.2.0<span class="w"> </span><span class="nv">chromadb</span><span class="o">==</span><span class="m">1</span>.0.21
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>git<span class="w"> </span>lfs<span class="w"> </span>install
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="download-eurosat-landsat-dataset-from-huggingface">
+<h3>Download EuroSAT-LANDSAT dataset from HuggingFace<a class="headerlink" href="#download-eurosat-landsat-dataset-from-huggingface" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://huggingface.co/datasets/isaaccorley/eurosat-l
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fatal: destination path &#39;eurosat-l&#39; already exists and is not an empty directory.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>bsdtar<span class="w"> </span>-xf<span class="w"> </span>eurosat-l/eurosat-l.zip<span class="w"> </span>-C<span class="w"> </span>eurosat-l
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="clone-metadata-aware-moe-mae-from-github">
+<h3>Clone Metadata-Aware MOE-MAE from Github<a class="headerlink" href="#clone-metadata-aware-moe-mae-from-github" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/AlbughdadiM/geo-moe-mae.git
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cloning into &#39;geo-moe-mae&#39;...
+remote: Enumerating objects: 495, done.
+remote: Counting objects: 100% (495/495), done.
+remote: Compressing objects: 100% (270/270), done.
+remote: Total 495 (delta 222), reused 489 (delta 216), pack-reused 0 (from 0)
+Receiving objects: 100% (495/495), 34.00 MiB | 39.07 MiB/s, done.
+Resolving deltas: 100% (222/222), done.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="get-eurosat-landsat-test-split-embeddings">
+<h3>Get EuroSAT-LANDSAT test split embeddings<a class="headerlink" href="#get-eurosat-landsat-test-split-embeddings" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>wget<span class="w"> </span>https://object-store.os-api.cci1.ecmwf.int/MoBucket/BiDS2025/x_y_test_eurosat_ls.npz
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2025-09-24 11:23:59--  https://object-store.os-api.cci1.ecmwf.int/MoBucket/BiDS2025/x_y_test_eurosat_ls.npz
+Resolving object-store.os-api.cci1.ecmwf.int (object-store.os-api.cci1.ecmwf.int)... 136.156.128.3
+Connecting to object-store.os-api.cci1.ecmwf.int (object-store.os-api.cci1.ecmwf.int)|136.156.128.3|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 326700510 (312M) [application/zip]
+Saving to: ‘x_y_test_eurosat_ls.npz’
+
+x_y_test_eurosat_ls 100%[===================&gt;] 311.57M  92.0MB/s    in 3.6s    
+
+2025-09-24 11:24:03 (87.4 MB/s) - ‘x_y_test_eurosat_ls.npz’ saved [326700510/326700510]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="import-libraries">
+<h3>Import libraries<a class="headerlink" href="#import-libraries" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;./geo-moe-mae&quot;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">torch.utils.data</span><span class="w"> </span><span class="kn">import</span> <span class="n">DataLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">torchvision</span><span class="w"> </span><span class="kn">import</span> <span class="n">transforms</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">torch.utils.data</span><span class="w"> </span><span class="kn">import</span> <span class="n">Subset</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">chromadb</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.manifold</span><span class="w"> </span><span class="kn">import</span> <span class="n">TSNE</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">plotly.subplots</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_subplots</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">models.moe_mae</span><span class="w"> </span><span class="kn">import</span> <span class="n">MOEMAE</span><span class="p">,</span> <span class="n">build_model</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datasets.eurosat</span><span class="w"> </span><span class="kn">import</span> <span class="n">EuroSATDatasetLS</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">utils.data_config</span><span class="w"> </span><span class="kn">import</span> <span class="n">BigEarthNetInfo</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">utils.data_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_model</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">transformation.transformer</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToFloat</span><span class="p">,</span> <span class="n">ZScoreNormalize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">utils.analysis_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">layer_report_simple</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="get-accelration-device-if-available">
+<h3>Get accelration device if available<a class="headerlink" href="#get-accelration-device-if-available" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="s2">&quot;cuda&quot;</span>
+        <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span>
+        <span class="k">else</span> <span class="s2">&quot;mps&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">backends</span><span class="o">.</span><span class="n">mps</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span>
+    <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Using device: </span><span class="si">{</span><span class="n">device</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Using device: mps
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="initialize-metadata-aware-moe-mae-model">
+<h3>Initialize Metadata-Aware MoE-MAE model<a class="headerlink" href="#initialize-metadata-aware-moe-mae-model" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_size</span> <span class="o">=</span> <span class="s2">&quot;S&quot;</span>
+<span class="n">img_size</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="n">patch_size</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">in_channels</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">checkpoint_path</span> <span class="o">=</span> <span class="s2">&quot;./geo-moe-mae/weights/moe_mae_bigearthnet_ls/pretrained_S_best.pth&quot;</span>
+<span class="n">encoder</span> <span class="o">=</span> <span class="n">build_model</span><span class="p">(</span>
+        <span class="n">size</span><span class="o">=</span><span class="n">model_size</span><span class="p">,</span>
+        <span class="n">img_size</span><span class="o">=</span><span class="n">img_size</span><span class="p">,</span>
+        <span class="n">patch_size</span><span class="o">=</span><span class="n">patch_size</span><span class="p">,</span>
+        <span class="n">in_chans</span><span class="o">=</span><span class="n">in_channels</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">MOEMAE</span><span class="p">(</span><span class="n">encoder</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="n">checkpoint_path</span><span class="p">,</span><span class="n">device</span><span class="p">)</span>
+<span class="n">encoder</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">encoder</span>
+<span class="n">encoder</span><span class="o">.</span><span class="n">eval</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="set-data-path">
+<h3>Set data path<a class="headerlink" href="#set-data-path" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_txt_test</span> <span class="o">=</span> <span class="s2">&quot;./eurosat-l/eurosat-test.txt&quot;</span>
+<span class="n">data_path</span> <span class="o">=</span> <span class="s2">&quot;./eurosat-l/eurosat-l&quot;</span>
+<span class="n">save_path</span> <span class="o">=</span> <span class="s2">&quot;./eurosat-l&quot;</span>
+<span class="n">label_class</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;AnnualCrop&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Forest&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;HerbaceousVegetation&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Highway&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Industrial&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Pasture&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;PermanentCrop&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Residential&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;River&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;SeaLake&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="embedding-exploration-using-t-sne">
+<h2>2) Embedding Exploration using t-SNE<a class="headerlink" href="#embedding-exploration-using-t-sne" title="Link to this heading">#</a></h2>
+<section id="apply-t-sne-and-visualize-with-the-dataset-labels">
+<h3>Apply t-SNE and visualize with the dataset labels<a class="headerlink" href="#apply-t-sne-and-visualize-with-the-dataset-labels" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">npz_path_test</span> <span class="o">=</span> <span class="s2">&quot;x_y_test_eurosat_ls.npz&quot;</span> 
+<span class="n">test_embeddings</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">npz_path_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span> <span class="p">(</span>
+    <span class="n">test_embeddings</span><span class="p">[</span><span class="s2">&quot;x_test&quot;</span><span class="p">],</span>
+    <span class="n">test_embeddings</span><span class="p">[</span><span class="s2">&quot;y_test&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">meta_tokens</span> <span class="o">=</span> <span class="n">x_test</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">576</span><span class="p">]</span>
+<span class="n">cls_token</span> <span class="o">=</span> <span class="n">x_test</span><span class="p">[:,</span> <span class="mi">576</span><span class="p">:</span><span class="mi">720</span><span class="p">]</span>
+<span class="n">other_tokens</span> <span class="o">=</span> <span class="n">x_test</span><span class="p">[:,</span> <span class="mi">720</span><span class="p">:]</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">cls_token</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">other_tokens</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">x_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">labels</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5400, 144)
+(5400, 14400)
+(5400, 15120)
+(5400,)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="t-sne-on-all-tokens">
+<h3>t-SNE on all tokens<a class="headerlink" href="#t-sne-on-all-tokens" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tsne</span> <span class="o">=</span> <span class="n">TSNE</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">perplexity</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">emb_3d</span> <span class="o">=</span> <span class="n">tsne</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="t-sne-on-all-tokens-other-than-metadata-and-cls-token">
+<h3>t-SNE on all tokens other than metadata and cls token<a class="headerlink" href="#t-sne-on-all-tokens-other-than-metadata-and-cls-token" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tsne</span> <span class="o">=</span> <span class="n">TSNE</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">perplexity</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">emb_3d_other</span> <span class="o">=</span> <span class="n">tsne</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">other_tokens</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="t-sne-on-cls-tokens">
+<h3>t-SNE on CLS tokens<a class="headerlink" href="#t-sne-on-cls-tokens" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tsne</span> <span class="o">=</span> <span class="n">TSNE</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">perplexity</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">emb_3d_cls</span> <span class="o">=</span> <span class="n">tsne</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">cls_token</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="t-sne-on-metadata-tokens">
+<h3>t-SNE on metadata tokens<a class="headerlink" href="#t-sne-on-metadata-tokens" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tsne</span> <span class="o">=</span> <span class="n">TSNE</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">perplexity</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">emb_3d_meta</span> <span class="o">=</span> <span class="n">tsne</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">meta_tokens</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-the-results">
+<h3>Plot the results<a class="headerlink" href="#plot-the-results" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">embeddings</span> <span class="o">=</span> <span class="p">[</span><span class="n">emb_3d</span><span class="p">,</span> <span class="n">emb_3d_other</span><span class="p">,</span> <span class="n">emb_3d_cls</span><span class="p">,</span> <span class="n">emb_3d_meta</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;t-SNE of MoE-MAE Embeddings&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;t-SNE of Other Embeddings&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;t-SNE of CLS Embeddings&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;t-SNE of Meta Embeddings&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">emb</span><span class="p">,</span> <span class="n">title</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">,</span> <span class="n">titles</span><span class="p">):</span>
+    <span class="n">scatter</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+        <span class="n">emb</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">emb</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="n">c</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;tab10&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span>
+    <span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+
+<span class="c1"># Create a single legend for all subplots</span>
+<span class="n">handles</span><span class="p">,</span> <span class="n">cls_labels</span> <span class="o">=</span> <span class="n">scatter</span><span class="o">.</span><span class="n">legend_elements</span><span class="p">(</span><span class="n">num</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">label_class</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="p">,</span> <span class="n">label_class</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;classes&quot;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper left&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/fe83ceb67ace0e2cf90dd9154be47f1ad159459c970a4ee4a5e3358efc9a39c6.png" src="_images/fe83ceb67ace0e2cf90dd9154be47f1ad159459c970a4ee4a5e3358efc9a39c6.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">to3d</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+    <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">arr</span>
+    <span class="k">elif</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>  <span class="c1"># pad with zeros</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">([</span><span class="n">arr</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">))])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected [N,2] or [N,3], got </span><span class="si">{</span><span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">embeddings</span> <span class="o">=</span> <span class="p">[</span><span class="n">emb_3d</span><span class="p">,</span> <span class="n">emb_3d_other</span><span class="p">,</span> <span class="n">emb_3d_cls</span><span class="p">,</span> <span class="n">emb_3d_meta</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;t-SNE of MoE-MAE Embeddings&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;t-SNE of Other Embeddings&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;t-SNE of CLS Embeddings&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;t-SNE of Meta Embeddings&quot;</span><span class="p">]</span>
+
+<span class="n">embeddings</span> <span class="o">=</span> <span class="p">[</span><span class="n">to3d</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">embeddings</span><span class="p">]</span>
+
+<span class="n">palette</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">qualitative</span><span class="o">.</span><span class="n">T10</span>
+<span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span><span class="bp">cls</span><span class="p">:</span> <span class="n">palette</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">palette</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="bp">cls</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">label_class</span><span class="p">)}</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span>
+    <span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">specs</span><span class="o">=</span><span class="p">[[{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;scene&quot;</span><span class="p">}]</span><span class="o">*</span><span class="mi">4</span><span class="p">],</span>
+    <span class="n">subplot_titles</span><span class="o">=</span><span class="n">titles</span><span class="p">,</span>
+    <span class="n">horizontal_spacing</span><span class="o">=</span><span class="mf">0.04</span>
+<span class="p">)</span>
+<span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="p">(</span><span class="n">emb</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="n">titles</span><span class="p">),</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">label_class</span><span class="p">)):</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">labels</span> <span class="o">==</span> <span class="n">i</span><span class="p">)</span>
+        <span class="n">pts</span> <span class="o">=</span> <span class="n">emb</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">pts</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+            <span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span>
+                <span class="n">x</span><span class="o">=</span><span class="n">pts</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">pts</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">z</span><span class="o">=</span><span class="n">pts</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">],</span>
+                <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;markers&quot;</span><span class="p">,</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">label_class</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                <span class="n">legendgroup</span><span class="o">=</span><span class="n">label_class</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                <span class="n">showlegend</span><span class="o">=</span><span class="p">(</span><span class="n">col</span> <span class="o">==</span> <span class="mi">1</span><span class="p">),</span>  <span class="c1"># show legend only once</span>
+                <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_map</span><span class="p">[</span><span class="n">label_class</span><span class="p">[</span><span class="n">i</span><span class="p">]]),</span>
+                <span class="n">hovertemplate</span><span class="o">=</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;&lt;b&gt;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">&lt;/b&gt;&lt;br&gt;x=%</span><span class="se">{{</span><span class="s2">x:.3f</span><span class="se">}}</span><span class="s2">&lt;br&gt;y=%</span><span class="se">{{</span><span class="s2">y:.3f</span><span class="se">}}</span><span class="s2">&lt;br&gt;z=%</span><span class="se">{{</span><span class="s2">z:.3f</span><span class="se">}}</span><span class="s2">&lt;br&gt;&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;class=</span><span class="si">{</span><span class="n">label_class</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;extra&gt;&lt;/extra&gt;&quot;</span>
+                <span class="p">)</span>
+            <span class="p">),</span>
+            <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="n">col</span>
+        <span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1400</span><span class="p">,</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">legend</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Classes&quot;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">xanchor</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">1.02</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="linear-probe-performance-on-eurosat-ls-test-split">
+<h4>Linear probe performance on EuroSAT-LS Test Split.<a class="headerlink" href="#linear-probe-performance-on-eurosat-ls-test-split" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Embedding</p></th>
+<th class="head"><p>OA %</p></th>
+<th class="head"><p>Precision (macro)</p></th>
+<th class="head"><p>Recall (macro)</p></th>
+<th class="head"><p>F1 (macro)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CLS token</p></td>
+<td><p>78.4</p></td>
+<td><p>0.781</p></td>
+<td><p>0.779</p></td>
+<td><p>0.777</p></td>
+</tr>
+<tr class="row-odd"><td><p>All tokens</p></td>
+<td><p><strong>84.2</strong></p></td>
+<td><p><strong>0.845</strong></p></td>
+<td><p><strong>0.838</strong></p></td>
+<td><p><strong>0.839</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>All tokens (Avg.)</p></td>
+<td><p>74.3</p></td>
+<td><p>0.739</p></td>
+<td><p>0.737</p></td>
+<td><p>0.731</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section id="id2">
+<h2>3) Expert Specialization<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="data-transformation-datasets-and-dataloaders">
+<h3>Data transformation, datasets, and dataloaders<a class="headerlink" href="#data-transformation-datasets-and-dataloaders" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bigearth_transforms</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">(</span>
+        <span class="p">[</span>
+            <span class="n">transforms</span><span class="o">.</span><span class="n">Resize</span><span class="p">((</span><span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">)),</span>
+            <span class="n">ToFloat</span><span class="p">(),</span>
+            <span class="n">ZScoreNormalize</span><span class="p">(</span>
+                <span class="n">BigEarthNetInfo</span><span class="o">.</span><span class="n">STATISTICS</span><span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">],</span>
+                <span class="n">BigEarthNetInfo</span><span class="o">.</span><span class="n">STATISTICS</span><span class="p">[</span><span class="s2">&quot;std&quot;</span><span class="p">],</span>
+            <span class="p">),</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+
+<span class="n">test_dataset</span> <span class="o">=</span> <span class="n">EuroSATDatasetLS</span><span class="p">(</span>
+        <span class="n">root_dir</span> <span class="o">=</span> <span class="n">data_path</span><span class="p">,</span>
+        <span class="n">split_file</span> <span class="o">=</span> <span class="n">data_txt_test</span><span class="p">,</span>
+        <span class="n">transform</span><span class="o">=</span><span class="n">bigearth_transforms</span><span class="p">,</span>
+        <span class="n">return_one_hot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="n">test_dataloader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span>
+        <span class="n">test_dataset</span><span class="p">,</span>
+        <span class="n">batch_size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+        <span class="n">persistent_workers</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">prefetch_factor</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+        <span class="n">num_workers</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+        <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="visualize-experts-specialities">
+<h2>Visualize experts specialities<a class="headerlink" href="#visualize-experts-specialities" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">test_dataloader</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imgs</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">data_iter</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pick an image and a layer to inspect</span>
+<span class="n">image_index</span> <span class="o">=</span> <span class="mi">3</span><span class="c1">#2#1 #15#13</span>
+<span class="n">layer_index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">label_class</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">image_index</span><span class="p">])])</span>
+<span class="n">layer_report_simple</span><span class="p">(</span>
+    <span class="n">model</span><span class="p">,</span>
+    <span class="n">imgs</span><span class="p">,</span>
+    <span class="n">image_index</span><span class="o">=</span><span class="n">image_index</span><span class="p">,</span>
+    <span class="n">layer_index</span><span class="o">=</span><span class="n">layer_index</span><span class="p">,</span>
+    <span class="n">max_values</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">65454.0</span><span class="p">,</span> <span class="mf">65454.0</span><span class="p">,</span> <span class="mf">65330.308</span><span class="p">]),</span> <span class="c1"># From BigEartInfo STATS</span>
+    <span class="n">rgb_bands</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">device</span><span class="o">=</span><span class="n">device</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AnnualCrop
+</pre></div>
+</div>
+<img alt="_images/76c4eea7d6ed53d7c76731d38dcb106f18e2747ea327aead1100354c5e7c5fd5.png" src="_images/76c4eea7d6ed53d7c76731d38dcb106f18e2747ea327aead1100354c5e7c5fd5.png" />
+<img alt="_images/835ac4dc7485a5ada74e3f575f2e66df2b68aad5910e23cfd7d347bce62a22c3.png" src="_images/835ac4dc7485a5ada74e3f575f2e66df2b68aad5910e23cfd7d347bce62a22c3.png" />
+<img alt="_images/90fa7ee617b7cc34c8cea3a5e76e0b9a943652da6d9df69d2d60ca2c0772042e.png" src="_images/90fa7ee617b7cc34c8cea3a5e76e0b9a943652da6d9df69d2d60ca2c0772042e.png" />
+<img alt="_images/1bc82f447a230583ce8dafcd35505a92752b24d4ead79c142c8a1c9e9ceecc60.png" src="_images/1bc82f447a230583ce8dafcd35505a92752b24d4ead79c142c8a1c9e9ceecc60.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;num_experts&#39;: 3,
+ &#39;usage_image&#39;: array([100,   0, 100]),
+ &#39;moe_loss&#39;: 0.0571892075240612}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="image-search-with-chromadb">
+<h2>4) Image Search with ChromaDB<a class="headerlink" href="#image-search-with-chromadb" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MEAN_ARR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">9405.194</span><span class="p">,</span> <span class="mf">9649.677</span><span class="p">,</span> <span class="mf">10425.686</span><span class="p">,</span> <span class="mf">10444.589</span><span class="p">,</span> <span class="mf">16067.627</span><span class="p">,</span> <span class="mf">12699.184</span><span class="p">,</span> <span class="mf">10596.475</span><span class="p">])</span>
+<span class="n">STD_ARR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">6016.344</span><span class="p">,</span> <span class="mf">6095.472</span><span class="p">,</span> <span class="mf">5839.462</span><span class="p">,</span> <span class="mf">6068.493</span><span class="p">,</span> <span class="mf">6271.440</span><span class="p">,</span> <span class="mf">4256.046</span><span class="p">,</span> <span class="mf">3130.776</span><span class="p">])</span>
+<span class="n">MAX_ARR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span><span class="mf">63979.918</span><span class="p">,</span> <span class="mf">65330.308</span><span class="p">,</span> <span class="mf">65454.0</span><span class="p">,</span> <span class="mf">65454.0</span><span class="p">,</span> <span class="mf">65454.0</span><span class="p">,</span> <span class="mf">65454.004</span><span class="p">,</span> <span class="mf">65454.004</span><span class="p">])</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">x_test</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">105</span><span class="p">,</span><span class="mi">144</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">y_test</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">test_dataset</span>
+<span class="k">assert</span> <span class="n">X</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="p">(</span><span class="mi">105</span><span class="p">,</span><span class="mi">144</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span> <span class="o">==</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">perm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">perm</span><span class="p">]</span> 
+<span class="n">Y</span> <span class="o">=</span> <span class="n">Y</span><span class="p">[</span><span class="n">perm</span><span class="p">]</span> 
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">Subset</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">perm</span><span class="p">)</span>
+<span class="c1"># Flatten + L2-normalize for cosine</span>
+<span class="n">Xf</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Xf</span> <span class="o">=</span> <span class="n">Xf</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">Xf</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1e-12</span><span class="p">)</span>
+
+<span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;img_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+<span class="n">metas</span> <span class="o">=</span> <span class="p">[{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)}</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+
+<span class="c1"># ChromDB in memory</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">chromadb</span><span class="o">.</span><span class="n">EphemeralClient</span><span class="p">()</span>  <span class="c1"># in-memory</span>
+<span class="n">col</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_or_create_collection</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;image_embeddings_demo&quot;</span><span class="p">,</span>
+    <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;hnsw:space&quot;</span><span class="p">:</span> <span class="s2">&quot;cosine&quot;</span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="c1"># Clear any existing data</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">col</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">where</span><span class="o">=</span><span class="p">{})</span>
+<span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="n">col</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+    <span class="n">ids</span><span class="o">=</span><span class="n">ids</span><span class="p">,</span>
+    <span class="n">embeddings</span><span class="o">=</span><span class="n">Xf</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+    <span class="n">metadatas</span><span class="o">=</span><span class="n">metas</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Loaded </span><span class="si">{</span><span class="n">N</span><span class="si">}</span><span class="s2"> vectors into ephemeral Chroma collection.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loaded 5400 vectors into ephemeral Chroma collection.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">_query</span><span class="p">(</span><span class="n">vec_flat_l2norm</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">col</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+        <span class="n">query_embeddings</span><span class="o">=</span><span class="p">[</span><span class="n">vec_flat_l2norm</span><span class="o">.</span><span class="n">tolist</span><span class="p">()],</span>
+        <span class="n">n_results</span><span class="o">=</span><span class="n">top_k</span><span class="p">,</span>
+        <span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;metadatas&quot;</span><span class="p">,</span><span class="s2">&quot;distances&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;ids&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s2">&quot;rank&quot;</span><span class="p">:</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">res</span><span class="p">[</span><span class="s2">&quot;ids&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">],</span>
+            <span class="s2">&quot;distance&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;distances&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]),</span>
+            <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;metadatas&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;label&quot;</span><span class="p">]),</span>
+            <span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;metadatas&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;index&quot;</span><span class="p">]),</span>
+        <span class="p">})</span>
+    <span class="k">return</span> <span class="n">out</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">search_by_idx</span><span class="p">(</span><span class="n">i</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">Xf</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_query</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">top_k</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">search_by_embedding</span><span class="p">(</span><span class="n">emb_105x144</span><span class="p">,</span> <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">as_tensor</span><span class="p">(</span><span class="n">emb_105x144</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">float</span><span class="p">()</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">v</span> <span class="o">/</span> <span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1e-12</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_query</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">top_k</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_to_numpy_img</span><span class="p">(</span><span class="n">sample</span><span class="p">,</span><span class="n">mean_t</span> <span class="o">=</span> <span class="n">MEAN_ARR</span><span class="p">,</span><span class="n">std_t</span> <span class="o">=</span> <span class="n">STD_ARR</span><span class="p">,</span><span class="n">max_t</span> <span class="o">=</span> <span class="n">MAX_ARR</span><span class="p">):</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>  <span class="c1"># CHW-&gt;HWC</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">img</span> <span class="o">*</span> <span class="n">std_t</span> <span class="o">+</span> <span class="n">mean_t</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">img</span> <span class="o">/</span> <span class="n">max_t</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">99</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">hi</span> <span class="o">&gt;</span> <span class="n">lo</span><span class="p">:</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">((</span><span class="n">img</span> <span class="o">-</span> <span class="n">lo</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">hi</span> <span class="o">-</span> <span class="n">lo</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">img</span><span class="p">[</span><span class="o">...</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">][</span><span class="o">...</span><span class="p">,[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]],</span><span class="n">label</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">show_query_and_neighbors</span><span class="p">(</span><span class="n">i</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">top_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="n">search_by_idx</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="n">top_k</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rows</span><span class="p">)</span>
+
+    <span class="n">cols</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">top_k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">grid_rows</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">top_k</span> <span class="o">/</span> <span class="n">cols</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">cols</span><span class="o">*</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">grid_rows</span><span class="o">*</span><span class="mf">2.2</span><span class="p">))</span>
+    <span class="n">q</span><span class="p">,</span><span class="n">l</span> <span class="o">=</span> <span class="n">_to_numpy_img</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">grid_rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Query i=</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="se">\n</span><span class="s2">label=</span><span class="si">{</span><span class="n">label_class</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">])]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Neighbors</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">j</span>
+        <span class="k">if</span> <span class="n">pos</span> <span class="o">&gt;</span> <span class="n">grid_rows</span> <span class="o">*</span> <span class="n">cols</span><span class="p">:</span> <span class="k">break</span>
+        <span class="n">n</span><span class="p">,</span><span class="n">n_l</span> <span class="o">=</span> <span class="n">_to_numpy_img</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]])</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">grid_rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;i=</span><span class="si">{</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, L=</span><span class="si">{</span><span class="n">label_class</span><span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]]</span><span class="si">}</span><span class="se">\n</span><span class="s2">d=</span><span class="si">{</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top-5 for idx=0:&quot;</span><span class="p">,</span> <span class="n">search_by_idx</span><span class="p">(</span><span class="mi">312</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top-5 for idx=0: [{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_312&#39;, &#39;distance&#39;: 1.1324882507324219e-06, &#39;label&#39;: 7, &#39;index&#39;: 312}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_752&#39;, &#39;distance&#39;: 0.15281277894973755, &#39;label&#39;: 0, &#39;index&#39;: 752}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_4297&#39;, &#39;distance&#39;: 0.1575269103050232, &#39;label&#39;: 0, &#39;index&#39;: 4297}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_1360&#39;, &#39;distance&#39;: 0.1594039797782898, &#39;label&#39;: 7, &#39;index&#39;: 1360}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_2398&#39;, &#39;distance&#39;: 0.16025084257125854, &#39;label&#39;: 7, &#39;index&#39;: 2398}]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_query_and_neighbors</span><span class="p">(</span><span class="mi">1290</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_1290&#39;, &#39;distance&#39;: 1.1324882507324219e-06, &#39;label&#39;: 0, &#39;index&#39;: 1290}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_4175&#39;, &#39;distance&#39;: 0.16615664958953857, &#39;label&#39;: 0, &#39;index&#39;: 4175}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_1877&#39;, &#39;distance&#39;: 0.175276517868042, &#39;label&#39;: 0, &#39;index&#39;: 1877}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_1367&#39;, &#39;distance&#39;: 0.18707942962646484, &#39;label&#39;: 2, &#39;index&#39;: 1367}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_4402&#39;, &#39;distance&#39;: 0.18734389543533325, &#39;label&#39;: 0, &#39;index&#39;: 4402}, {&#39;rank&#39;: 6, &#39;id&#39;: &#39;img_3064&#39;, &#39;distance&#39;: 0.19055378437042236, &#39;label&#39;: 0, &#39;index&#39;: 3064}, {&#39;rank&#39;: 7, &#39;id&#39;: &#39;img_1364&#39;, &#39;distance&#39;: 0.19418835639953613, &#39;label&#39;: 0, &#39;index&#39;: 1364}, {&#39;rank&#39;: 8, &#39;id&#39;: &#39;img_3528&#39;, &#39;distance&#39;: 0.196458101272583, &#39;label&#39;: 0, &#39;index&#39;: 3528}, {&#39;rank&#39;: 9, &#39;id&#39;: &#39;img_5092&#39;, &#39;distance&#39;: 0.1973457932472229, &#39;label&#39;: 6, &#39;index&#39;: 5092}]
+</pre></div>
+</div>
+<img alt="_images/a45106e101bda253fde4dd904b49692b320b7402e1af75745cb8422ac4e69f57.png" src="_images/a45106e101bda253fde4dd904b49692b320b7402e1af75745cb8422ac4e69f57.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_query_and_neighbors</span><span class="p">(</span><span class="mi">730</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_730&#39;, &#39;distance&#39;: 5.960464477539062e-07, &#39;label&#39;: 8, &#39;index&#39;: 730}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_3212&#39;, &#39;distance&#39;: 0.22081124782562256, &#39;label&#39;: 8, &#39;index&#39;: 3212}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_2806&#39;, &#39;distance&#39;: 0.23729127645492554, &#39;label&#39;: 8, &#39;index&#39;: 2806}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_4520&#39;, &#39;distance&#39;: 0.23889899253845215, &#39;label&#39;: 8, &#39;index&#39;: 4520}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_3732&#39;, &#39;distance&#39;: 0.2572094798088074, &#39;label&#39;: 8, &#39;index&#39;: 3732}, {&#39;rank&#39;: 6, &#39;id&#39;: &#39;img_2448&#39;, &#39;distance&#39;: 0.275951623916626, &#39;label&#39;: 8, &#39;index&#39;: 2448}, {&#39;rank&#39;: 7, &#39;id&#39;: &#39;img_2877&#39;, &#39;distance&#39;: 0.28226345777511597, &#39;label&#39;: 8, &#39;index&#39;: 2877}, {&#39;rank&#39;: 8, &#39;id&#39;: &#39;img_4539&#39;, &#39;distance&#39;: 0.28408682346343994, &#39;label&#39;: 8, &#39;index&#39;: 4539}, {&#39;rank&#39;: 9, &#39;id&#39;: &#39;img_3892&#39;, &#39;distance&#39;: 0.28518879413604736, &#39;label&#39;: 8, &#39;index&#39;: 3892}]
+</pre></div>
+</div>
+<img alt="_images/aa1c4acacd7662f7dd7b46542b3517e87cb6f7939bae077874d77dc7b8331c7c.png" src="_images/aa1c4acacd7662f7dd7b46542b3517e87cb6f7939bae077874d77dc7b8331c7c.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_query_and_neighbors</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_5001&#39;, &#39;distance&#39;: 1.0728836059570312e-06, &#39;label&#39;: 9, &#39;index&#39;: 5001}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_3881&#39;, &#39;distance&#39;: 0.00280606746673584, &#39;label&#39;: 9, &#39;index&#39;: 3881}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_729&#39;, &#39;distance&#39;: 0.002893686294555664, &#39;label&#39;: 9, &#39;index&#39;: 729}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_3226&#39;, &#39;distance&#39;: 0.0029290318489074707, &#39;label&#39;: 9, &#39;index&#39;: 3226}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_1019&#39;, &#39;distance&#39;: 0.0029552578926086426, &#39;label&#39;: 9, &#39;index&#39;: 1019}, {&#39;rank&#39;: 6, &#39;id&#39;: &#39;img_5352&#39;, &#39;distance&#39;: 0.002960801124572754, &#39;label&#39;: 9, &#39;index&#39;: 5352}, {&#39;rank&#39;: 7, &#39;id&#39;: &#39;img_5231&#39;, &#39;distance&#39;: 0.0030092597007751465, &#39;label&#39;: 9, &#39;index&#39;: 5231}, {&#39;rank&#39;: 8, &#39;id&#39;: &#39;img_827&#39;, &#39;distance&#39;: 0.003015577793121338, &#39;label&#39;: 9, &#39;index&#39;: 827}, {&#39;rank&#39;: 9, &#39;id&#39;: &#39;img_3363&#39;, &#39;distance&#39;: 0.003037571907043457, &#39;label&#39;: 9, &#39;index&#39;: 3363}]
+</pre></div>
+</div>
+<img alt="_images/50648be180e279ad69c17019c3859a0f87de13cc726a017e9adcce6364b247a1.png" src="_images/50648be180e279ad69c17019c3859a0f87de13cc726a017e9adcce6364b247a1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_query_and_neighbors</span><span class="p">(</span><span class="mi">267</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_267&#39;, &#39;distance&#39;: 7.748603820800781e-07, &#39;label&#39;: 8, &#39;index&#39;: 267}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_1909&#39;, &#39;distance&#39;: 0.11097675561904907, &#39;label&#39;: 9, &#39;index&#39;: 1909}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_1583&#39;, &#39;distance&#39;: 0.11748170852661133, &#39;label&#39;: 9, &#39;index&#39;: 1583}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_2906&#39;, &#39;distance&#39;: 0.11759030818939209, &#39;label&#39;: 9, &#39;index&#39;: 2906}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_2451&#39;, &#39;distance&#39;: 0.11840802431106567, &#39;label&#39;: 9, &#39;index&#39;: 2451}, {&#39;rank&#39;: 6, &#39;id&#39;: &#39;img_1926&#39;, &#39;distance&#39;: 0.12580817937850952, &#39;label&#39;: 9, &#39;index&#39;: 1926}, {&#39;rank&#39;: 7, &#39;id&#39;: &#39;img_2180&#39;, &#39;distance&#39;: 0.12865948677062988, &#39;label&#39;: 9, &#39;index&#39;: 2180}, {&#39;rank&#39;: 8, &#39;id&#39;: &#39;img_5202&#39;, &#39;distance&#39;: 0.12914586067199707, &#39;label&#39;: 9, &#39;index&#39;: 5202}, {&#39;rank&#39;: 9, &#39;id&#39;: &#39;img_1658&#39;, &#39;distance&#39;: 0.13448363542556763, &#39;label&#39;: 9, &#39;index&#39;: 1658}]
+</pre></div>
+</div>
+<img alt="_images/8483eb5f982abd7bbc5c7d5db1473d3aac0ff7382c67c704e4558b4e549e114a.png" src="_images/8483eb5f982abd7bbc5c7d5db1473d3aac0ff7382c67c704e4558b4e549e114a.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_query_and_neighbors</span><span class="p">(</span><span class="mi">315</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_315&#39;, &#39;distance&#39;: 1.7285346984863281e-06, &#39;label&#39;: 1, &#39;index&#39;: 315}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_3527&#39;, &#39;distance&#39;: 0.06591832637786865, &#39;label&#39;: 1, &#39;index&#39;: 3527}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_3233&#39;, &#39;distance&#39;: 0.07000815868377686, &#39;label&#39;: 1, &#39;index&#39;: 3233}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_3805&#39;, &#39;distance&#39;: 0.07623088359832764, &#39;label&#39;: 1, &#39;index&#39;: 3805}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_3422&#39;, &#39;distance&#39;: 0.07806098461151123, &#39;label&#39;: 1, &#39;index&#39;: 3422}, {&#39;rank&#39;: 6, &#39;id&#39;: &#39;img_875&#39;, &#39;distance&#39;: 0.08080369234085083, &#39;label&#39;: 1, &#39;index&#39;: 875}, {&#39;rank&#39;: 7, &#39;id&#39;: &#39;img_3668&#39;, &#39;distance&#39;: 0.08265680074691772, &#39;label&#39;: 1, &#39;index&#39;: 3668}, {&#39;rank&#39;: 8, &#39;id&#39;: &#39;img_4212&#39;, &#39;distance&#39;: 0.08279412984848022, &#39;label&#39;: 1, &#39;index&#39;: 4212}, {&#39;rank&#39;: 9, &#39;id&#39;: &#39;img_128&#39;, &#39;distance&#39;: 0.08339214324951172, &#39;label&#39;: 1, &#39;index&#39;: 128}]
+</pre></div>
+</div>
+<img alt="_images/c9c42fe4d3628729e091e0c35c8041303c186c904603b2f1e0011c6d4d51e18b.png" src="_images/c9c42fe4d3628729e091e0c35c8041303c186c904603b2f1e0011c6d4d51e18b.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_query_and_neighbors</span><span class="p">(</span><span class="mi">421</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_421&#39;, &#39;distance&#39;: 1.0728836059570312e-06, &#39;label&#39;: 7, &#39;index&#39;: 421}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_752&#39;, &#39;distance&#39;: 0.12855345010757446, &#39;label&#39;: 0, &#39;index&#39;: 752}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_4297&#39;, &#39;distance&#39;: 0.12946921586990356, &#39;label&#39;: 0, &#39;index&#39;: 4297}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_3552&#39;, &#39;distance&#39;: 0.13634300231933594, &#39;label&#39;: 7, &#39;index&#39;: 3552}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_418&#39;, &#39;distance&#39;: 0.1376885175704956, &#39;label&#39;: 7, &#39;index&#39;: 418}, {&#39;rank&#39;: 6, &#39;id&#39;: &#39;img_1418&#39;, &#39;distance&#39;: 0.14496833086013794, &#39;label&#39;: 7, &#39;index&#39;: 1418}, {&#39;rank&#39;: 7, &#39;id&#39;: &#39;img_1360&#39;, &#39;distance&#39;: 0.1458379030227661, &#39;label&#39;: 7, &#39;index&#39;: 1360}, {&#39;rank&#39;: 8, &#39;id&#39;: &#39;img_1059&#39;, &#39;distance&#39;: 0.14881408214569092, &#39;label&#39;: 2, &#39;index&#39;: 1059}, {&#39;rank&#39;: 9, &#39;id&#39;: &#39;img_1933&#39;, &#39;distance&#39;: 0.14977967739105225, &#39;label&#39;: 7, &#39;index&#39;: 1933}]
+</pre></div>
+</div>
+<img alt="_images/eea38f8a3bc5b879ea1b84947cb37b6df89e01978c245d5454352784937ce794.png" src="_images/eea38f8a3bc5b879ea1b84947cb37b6df89e01978c245d5454352784937ce794.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_query_and_neighbors</span><span class="p">(</span><span class="mi">697</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;rank&#39;: 1, &#39;id&#39;: &#39;img_697&#39;, &#39;distance&#39;: -9.5367431640625e-07, &#39;label&#39;: 0, &#39;index&#39;: 697}, {&#39;rank&#39;: 2, &#39;id&#39;: &#39;img_195&#39;, &#39;distance&#39;: 0.3298208713531494, &#39;label&#39;: 0, &#39;index&#39;: 195}, {&#39;rank&#39;: 3, &#39;id&#39;: &#39;img_1839&#39;, &#39;distance&#39;: 0.36086398363113403, &#39;label&#39;: 5, &#39;index&#39;: 1839}, {&#39;rank&#39;: 4, &#39;id&#39;: &#39;img_4737&#39;, &#39;distance&#39;: 0.36322879791259766, &#39;label&#39;: 0, &#39;index&#39;: 4737}, {&#39;rank&#39;: 5, &#39;id&#39;: &#39;img_2999&#39;, &#39;distance&#39;: 0.3649284243583679, &#39;label&#39;: 0, &#39;index&#39;: 2999}, {&#39;rank&#39;: 6, &#39;id&#39;: &#39;img_2519&#39;, &#39;distance&#39;: 0.36681413650512695, &#39;label&#39;: 0, &#39;index&#39;: 2519}, {&#39;rank&#39;: 7, &#39;id&#39;: &#39;img_1994&#39;, &#39;distance&#39;: 0.36947381496429443, &#39;label&#39;: 0, &#39;index&#39;: 1994}, {&#39;rank&#39;: 8, &#39;id&#39;: &#39;img_664&#39;, &#39;distance&#39;: 0.3759034276008606, &#39;label&#39;: 5, &#39;index&#39;: 664}, {&#39;rank&#39;: 9, &#39;id&#39;: &#39;img_5208&#39;, &#39;distance&#39;: 0.37995588779449463, &#39;label&#39;: 0, &#39;index&#39;: 5208}]
+</pre></div>
+</div>
+<img alt="_images/67e18ba04375020976cda4b931ccc8afda5e10c98883b5cbadcba96b26fd004e.png" src="_images/67e18ba04375020976cda4b931ccc8afda5e10c98883b5cbadcba96b26fd004e.png" />
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="landslide_xbatcher.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Rapid Landslide Detection using Synthetic Aperture Radar (SAR) Datacubes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="afterword/resources.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Join the community!</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">📡🌍 BiDS’25 — EO4EU Tutorial</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-objectives">EO4EU Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-architecture">EO4EU Architecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-infrastructure">EO4EU Infrastructure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eo4eu-use-cases">EO4EU Use Cases</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bids-25-lightweight-masked-autoencoder-architecture-for-earth-observation">📡🌍 BiDS’25 — Lightweight Masked Autoencoder Architecture for Earth Observation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">📑 Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">1. Overview</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-exploration">2. Embedding Exploration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expert-specialization">3. Expert Specialization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#search-by-image">4. Search by Image</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1) Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-design">Model Design</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pretraining-objective">Pretraining Objective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-setup">Training Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-requirements">Install requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-eurosat-landsat-dataset-from-huggingface">Download EuroSAT-LANDSAT dataset from HuggingFace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-metadata-aware-moe-mae-from-github">Clone Metadata-Aware MOE-MAE from Github</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-eurosat-landsat-test-split-embeddings">Get EuroSAT-LANDSAT test split embeddings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-accelration-device-if-available">Get accelration device if available</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-metadata-aware-moe-mae-model">Initialize Metadata-Aware MoE-MAE model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-data-path">Set data path</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-exploration-using-t-sne">2) Embedding Exploration using t-SNE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-t-sne-and-visualize-with-the-dataset-labels">Apply t-SNE and visualize with the dataset labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-all-tokens">t-SNE on all tokens</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-all-tokens-other-than-metadata-and-cls-token">t-SNE on all tokens other than metadata and cls token</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-cls-tokens">t-SNE on CLS tokens</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-sne-on-metadata-tokens">t-SNE on metadata tokens</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-the-results">Plot the results</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-probe-performance-on-eurosat-ls-test-split">Linear probe performance on EuroSAT-LS Test Split.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3) Expert Specialization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transformation-datasets-and-dataloaders">Data transformation, datasets, and dataloaders</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-experts-specialities">Visualize experts specialities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-search-with-chromadb">4) Image Search with ChromaDB</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pangeo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
